@@ -1,0 +1,491 @@
+body {
+    background-image: url(img/bgmain.jpg);
+    font-family:'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+nav {
+    width: 1000px;
+    margin: 0px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#logo {
+    text-align: center;
+    transition: all 0.5s;
+}
+#logo:hover {
+    transform: scale(1.2) rotate(10deg);
+    
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+nav ul li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+    
+
+}
+nav ul li a::after {
+    content: '';
+    background-color: #ff2600;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 30%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.3s;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover::after{
+    top: 0px;
+    opacity: 1;
+}
+nav ul li a {
+    text-decoration: none;
+    color:#ff2600
+}
+main {
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+#leftside {
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    width: 180px;
+    max-height: auto;
+    border-radius: 10px;
+}
+.photo {
+    width: 160px;
+    color:#ff2600;
+    
+}
+
+#content {
+    text-align: center;
+    padding: 20px;
+    width: 560px;
+    max-height: auto;
+}
+
+#aside {
+    color: #ff2600;
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    width: 180px;
+    max-height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.9);
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+}
+.footertxt {
+
+    text-align: center;
+    margin-top: 15px;
+    font-size: large;
+    margin-left: 20px;
+    color:#ff2600
+}
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+}
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+ul .nav {
+    border: none
+}
+ul .nav > li {
+    border: none;
+}
+.txthead {
+    text-align: center;
+    font-size: 400%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    border-bottom: 2px solid #ff5100c4
+}
+.text {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+ /* 
+Kod dla strony utwory
+  */
+.title1 {
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 50px;
+    gap: 50px;
+    column-gap: 0px;
+
+}
+
+.title1 div {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #ff2600;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 21px 1px rgba(255, 38, 0, 1);
+    transition: transform 0.2s ease-in;
+}
+.title1 div i {
+    opacity: 0;
+    transition: all 1s;
+
+}
+.icon {
+    display: block;
+    font-size: 32px;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    transition: all 0.5s;
+}
+.title1 div:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    z-index: 0; 
+    opacity: 1;
+    
+}
+.title1 div:hover i {
+    opacity: 1;
+    
+}
+.title1 a {
+    text-decoration: none;
+    color: #ff2600;
+    font-family: fantasy;
+}
+#bgimg1 {
+    background-image: url(img/wariat.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px; 
+}
+#bgimg1 p {
+   
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
+    
+    
+}
+#bgimg2 {
+    background-image: url(img/walcz.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg2 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
+}
+#bgimg3 {
+    background-image: url(img/dr.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg3 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 2px;
+}
+#bgimg4 {
+    background-image: url(img/deprecha.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg4 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 100px;
+    padding: 2px;
+}
+#bgimg5 {
+    background-image: url(img/pogrz.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg5 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 2px;
+}
+#bgimg6 {
+    background-image: url(img/sluga.jpg);
+    background-size:cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg6 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
+}
+#bgimg7 {
+    background-image: url(img/wilk.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg7 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 2px;
+}
+#bgimg8 {
+    background-image: url(img/bekon.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg8 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
+}
+#bgimg9 {
+    background-image: url(img/trans.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg9 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 165px;
+    padding: 2px;
+}
+#bgimg10 {
+    background-image: url(img/kostrz.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;   
+}
+#bgimg10 p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    margin-top: 110px;
+    padding: 2px;
+}
+/* teksty piosenek */
+
+#s1 {
+    background-image: url(img/psych.jpg);
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+#s2 {
+    background-image: url(img/siw.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s3 {
+    background-image: url(img/syzyf.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s4 {
+    background-image: url(img/depr.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s5 {
+    background-image: url(img/bpogrz.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s6 {
+    background-image: url(img/bsluga.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s7 {
+    background-image: url(img/bwilk.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s8 {
+    background-image: url(img/bekonbg.png);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s9 {
+    background-image: url(img/transbg.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#s10 {
+    background-image: url(img/Kostrzynbg.avif);
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section #sectdiv {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+.songtxt {
+    
+    width: 760px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.songtxtbg {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.2049020291710434) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.20210090872286413) 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    margin: 100px 10px 100px;
+}
+.songtxtbga {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.2049020291710434) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.20210090872286413) 100%);
+
+}
+.songtxt h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: #ff2600;
+    line-height: 2px;
+    
+}
+
+.txtat {
+    width: 200px;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+.txtat h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    color: #c43218;
+}
+.txtat p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+.songlist1 {
+    width: 180px;
+    height: auto;
+    padding: 0px;
+    text-align: left;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 50%;
+    color: #ffffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7791317210477942) 15%, rgba(0,0,0,0.26652667903098737) 100%);
+    z-index: 1;
+    border-radius: 10px;
+    transform: scaleY(0) translateX(-150px);
+    opacity: 0;
+    transition: 0s ease-in all;
+    letter-spacing: 2px;
+  }
+.songlist1 a {
+   text-decoration: none;
+   color: #ffffff;
+}
+.songlist1 a:hover {
+    color: #ff2600;
+    text-align: center;
+}
+  .songlist1.active{
+    transition: 0.3s ease-in all;
+    transform: scaleY(1) translateX(0);
+    opacity: 1;
+  }
+.emp {
+    width: 200px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  /* 
+Kod dla strony Wośp live
+  */
+
+  .wosp {
+    display: block;
+    color: #ffffff;
+  }
+  
