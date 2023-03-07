@@ -1,9 +1,79 @@
 body {
-  background-image: url(img/bgmain.jpg);
+  background-image: url('../img/bgmain.jpg');
   font-family: "Lato", sans-serif;
   margin: 0 auto;
 }
 
+nav {
+  width: 1000px;
+  margin: 0px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#logo {
+  text-align: center;
+  transition: all 0.5s;
+}
+#logo:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+.bg__img {
+  position: absolute;
+  z-index: -1;
+  animation: slide 20s linear infinite;
+}
+@keyframes slide {
+  from {transform: translatex(-80vh);}
+  to {transform: translateX(180vh);}
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+}
+nav ul li {
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
+}
+nav ul li a::after {
+  content: "";
+  background-color: #ff2600;
+  background: linear-gradient(90deg, transparent, #ff2600);
+  width: 0%;
+  height: 3px;
+  border-radius: 30px;
+  position: absolute;
+  left: 0%;
+  opacity: 1;
+  bottom: 0%;
+  transition: all .4s;
+}
+nav ul li a:hover {
+  width: 100%;
+  background: linear-gradient(90deg, #f14d1b,#fff);
+  color: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ff2600;
+}
 main {
   text-align: center;
   display: flex;
@@ -138,7 +208,7 @@ Kod dla strony utwory
   font-family: fantasy;
 }
 #bgimg1 {
-  background-image: url(img/wariat.jpg);
+  background-image: url('../img/wariat.jpg');
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -150,7 +220,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg2 {
-  background-image: url(img/walcz.jpg);
+  background-image: url(../img/walcz.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -162,7 +232,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg3 {
-  background-image: url(img/dr.jpg);
+  background-image: url(../img/dr.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -174,7 +244,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg4 {
-  background-image: url(img/deprecha.jpg);
+  background-image: url(../img/deprecha.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -186,7 +256,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg5 {
-  background-image: url(img/pogrz.jpg);
+  background-image: url(../img/pogrz.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -198,7 +268,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg6 {
-  background-image: url(img/sluga.jpg);
+  background-image: url(../img/sluga.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -210,7 +280,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg7 {
-  background-image: url(img/wilk.jpg);
+  background-image: url(../img/wilk.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -222,7 +292,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg8 {
-  background-image: url(img/bekon.jpg);
+  background-image: url(../img/bekon.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -234,7 +304,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg9 {
-  background-image: url(img/trans.jpg);
+  background-image: url(../img/trans.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -246,7 +316,7 @@ Kod dla strony utwory
   padding: 2px;
 }
 #bgimg10 {
-  background-image: url(img/kostrz.jpg);
+  background-image: url(../img/kostrz.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -260,60 +330,60 @@ Kod dla strony utwory
 /* teksty piosenek */
 
 #s1 {
-  background-image: url(img/psych.jpg);
+  background-image: url(../img/psych.jpg);
   margin: 0 auto;
   background-attachment: fixed;
 }
 #s2 {
-  background-image: url(img/siw.jpg);
+  background-image: url(../img/siw.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s3 {
-  background-image: url(img/syzyf.jpg);
+  background-image: url(../img/syzyf.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s4 {
-  background-image: url(img/depr.jpg);
+  background-image: url(../img/depr.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s5 {
-  background-image: url(img/bpogrz.jpg);
+  background-image: url(../img/bpogrz.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s6 {
-  background-image: url(img/bsluga.jpg);
+  background-image: url(../img/bsluga.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s7 {
-  background-image: url(img/bwilk.jpg);
+  background-image: url(../img/bwilk.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s8 {
-  background-image: url(img/bekonbg.png);
+  background-image: url(../img/bekonbg.png);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s9 {
-  background-image: url(img/transbg.jpg);
+  background-image: url(../img/transbg.jpg);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
 }
 #s10 {
-  background-image: url(img/Kostrzynbg.avif);
+  background-image: url(../img/Kostrzynbg.avif);
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;

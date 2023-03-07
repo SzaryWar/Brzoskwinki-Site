@@ -3,7 +3,6 @@ const reveal = () => {
     const windowHeight = window.innerHeight;
     const elementTop = element.getBoundingClientRect().top;
     const scrollTop = window.pageYOffset
-    console.log(windowHeight, elementTop, window.pageYOffset)
 
     if (scrollTop > (elementTop + (windowHeight / 2))) {
       element.classList.add("active");

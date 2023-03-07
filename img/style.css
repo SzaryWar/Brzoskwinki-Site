@@ -1,3 +1,4 @@
+
 body {
     background-image: url(img/bgmain.jpg);
     font-family:'Lato', sans-serif;
@@ -205,7 +206,6 @@ Kod dla strony utwory
 .title1 a {
     text-decoration: none;
     color: #ff2600;
-    font-family: fantasy;
 }
 #bgimg1 {
     background-image: url(img/wariat.jpg);
