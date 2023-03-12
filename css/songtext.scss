@@ -1,0 +1,61 @@
+/* teksty piosenek */
+
+section #sectdiv {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .songtxt {
+    width: 760px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .songtxtbg {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.2049020291710434) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0.20210090872286413) 100%
+    );
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    margin: 100px 10px 100px;
+  }
+  .songtxtbga {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.2049020291710434) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0.20210090872286413) 100%
+    );
+  }
+  .songtxt h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: #ff2600;
+    line-height: 2px;
+  }
+  
+  .txtat {
+    width: 200px;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    & h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+      margin-top: 40px;
+      color: #c43218;
+    }
+    & p {
+      font-size: 24px;
+      letter-spacing: 1px;
+      margin-top: 40px;
+      color: #ffffff;
+    }
+  }
