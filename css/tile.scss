@@ -1,148 +1,146 @@
 /* 
 Kod dla strony utwory
   */
-  @import './mixin.scss';
-  .title1 {
-    display: flex;
-    color: #ffffff;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    margin-top: 50px;
-    gap: 50px;
-    column-gap: 0px;
-         & a {
-        text-decoration: none;
-        color: #ff2600;
-        font-family: fantasy;
-      }
-         & div {
-            height: 200px;
-            width: 200px;
-            border: 2px solid #ff2600;
-            border-radius: 10px;
-            position: relative;
-            box-shadow: 0px 0px 21px 1px rgba(255, 38, 0, 1);
-            transition: transform 0.2s ease-in;
-        &:hover {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            z-index: 0;
-            opacity: 1;
-            & i {
-                opacity: 1;
-              }
-          }
-        & i {
-            opacity: 0;
-            transition: all 1s;
-          }
-      }
+@import "./mixin.scss";
+.title1 {
+  display: flex;
+  color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 50px;
+  gap: 50px;
+  column-gap: 0px;
+  & a {
+    text-decoration: none;
+    color: #ff2600;
+    font-family: fantasy;
   }
-  
-  .icon {
-    display: block;
-    font-size: 32px;
-    position: absolute;
-    bottom: 30px;
-    left: 10px;
-    width: 10px;
-    height: 10px;
-    transition: all 0.5s;
+  & div {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #ff2600;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 21px 1px rgba(255, 38, 0, 1);
+    transition: transform 0.2s ease-in;
+    &:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      z-index: 0;
+      opacity: 1;
+      & i {
+        opacity: 1;
+      }
+    }
+    & i {
+      opacity: 0;
+      transition: all 1s;
+    }
   }
+}
 
-  
-  #tile_domWariatow {
-    @include tileposition(url('../img/wariat.jpg'));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 85px;
-        padding: 2px;
-      }
-    
+.icon {
+  display: block;
+  font-size: 32px;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  transition: all 0.5s;
+}
+
+#tile_domWariatow {
+  @include tileposition(url("../img/wariat.jpg"));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
   }
-  #tile_stawajiwalcz {
-    @include tileposition(url(../img/walcz.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 85px;
-        padding: 2px;
-      }
+}
+#tile_stawajiwalcz {
+  @include tileposition(url(../img/walcz.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
   }
-  
-  #tile_drozyskala {
-    @include tileposition(url(../img/dr.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 20px;
-        padding: 2px;
-      }
+}
+
+#tile_drozyskala {
+  @include tileposition(url(../img/dr.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 2px;
   }
-  #tile_deprecha {
-    @include tileposition(url(../img/deprecha.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 100px;
-        padding: 2px;
-      }
+}
+#tile_deprecha {
+  @include tileposition(url(../img/deprecha.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 100px;
+    padding: 2px;
   }
-  #tile_pogrzebany {
-    @include tileposition(url(../img/pogrz.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 20px;
-        margin-top: 20px;
-        padding: 2px;
-      }
+}
+#tile_pogrzebany {
+  @include tileposition(url(../img/pogrz.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 2px;
   }
-  #tile_sluga {
-    @include tileposition(url(../img/sluga.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 85px;
-        padding: 2px;
-      }
+}
+#tile_sluga {
+  @include tileposition(url(../img/sluga.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
   }
-  #tile_wilki {
-    @include tileposition(url(../img/wilk.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 5px;
-        padding: 2px;
-      }
+}
+#tile_wilki {
+  @include tileposition(url(../img/wilk.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 2px;
   }
-  #tile_bekon {
-    @include tileposition(url(../img/bekon.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 85px;
-        padding: 2px;
-      } 
+}
+#tile_bekon {
+  @include tileposition(url(../img/bekon.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 85px;
+    padding: 2px;
   }
-  #tile_transy {
-    @include tileposition(url(../img/trans.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 25px;
-        margin-top: 165px;
-        padding: 2px;
-      }
+}
+#tile_transy {
+  @include tileposition(url(../img/trans.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    margin-top: 165px;
+    padding: 2px;
   }
- 
-  #tile_kostrzyn {
-    @include tileposition(url(../img/kostrz.jpg));
-    & p {
-        background-color: rgba(0, 0, 0, 0.9);
-        font-size: 20px;
-        margin-top: 110px;
-        padding: 2px;
-      }
+}
+
+#tile_kostrzyn {
+  @include tileposition(url(../img/kostrz.jpg));
+  & p {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    margin-top: 110px;
+    padding: 2px;
   }
+}

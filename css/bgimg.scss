@@ -1,9 +1,13 @@
 .bg__img {
-    position: absolute;
-    z-index: -1;
-    animation: slide 20s linear infinite;
+  position: absolute;
+  z-index: -1;
+  animation: slide 20s linear infinite;
+}
+@keyframes slide {
+  from {
+    transform: translatex(-80vh);
   }
-  @keyframes slide {
-    from {transform: translatex(-80vh);}
-    to {transform: translateX(180vh);}
+  to {
+    transform: translateX(180vh);
   }
+}

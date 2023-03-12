@@ -62,18 +62,17 @@ nav {
     color: #ff2600;
   }
   ul {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0px;
-    & li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    & .nav {
-      border: none;
-    }
-    & .nav > li {
-      border: none;
-    }
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0px;
+  & li {
+    display: inline-block;
+    margin-right: 20px;
   }
-  
+  & .nav {
+    border: none;
+  }
+  & .nav > li {
+    border: none;
+  }
+}

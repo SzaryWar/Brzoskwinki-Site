@@ -1,31 +1,30 @@
-
 #bg_domwariatow {
-   @include songbackground(url(../img/psych.jpg))
-  }
-  #bg_stawaiwalcz {
-    @include songbackground(url(../img/siw.jpg))
-  }
-  #bg_drazyskala {
-    @include songbackground(url(../img/syzyf.jpg))
-  }
-  #bg_deprecha {
-    @include songbackground(url(../img/depr.jpg))
-  }
-  #bg_pogrzebany {
-    @include songbackground(url(../img/bpogrz.jpg))
-  }
-  #bg_sluga {
-    @include songbackground(url(../img/bsluga.jpg))
-  }
-  #bg_wilki {
-    @include songbackground(url(../img/bwilk.jpg))
-  }
-  #bg_bekon {
-    @include songbackground(url(../img/bekonbg.png))
-  }
-  #bg_transy {
-    @include songbackground(url(../img/transbg.jpg))
-  }
-  #bg_kostrzyn{
-    @include songbackground(url(../img/Kostrzynbg.avif))
-  }
+  @include songbackground(url(../img/psych.jpg));
+}
+#bg_stawaiwalcz {
+  @include songbackground(url(../img/siw.jpg));
+}
+#bg_drazyskala {
+  @include songbackground(url(../img/syzyf.jpg));
+}
+#bg_deprecha {
+  @include songbackground(url(../img/depr.jpg));
+}
+#bg_pogrzebany {
+  @include songbackground(url(../img/bpogrz.jpg));
+}
+#bg_sluga {
+  @include songbackground(url(../img/bsluga.jpg));
+}
+#bg_wilki {
+  @include songbackground(url(../img/bwilk.jpg));
+}
+#bg_bekon {
+  @include songbackground(url(../img/bekonbg.png));
+}
+#bg_transy {
+  @include songbackground(url(../img/transbg.jpg));
+}
+#bg_kostrzyn {
+  @include songbackground(url(../img/Kostrzynbg.avif));
+}
