@@ -1,0 +1,73 @@
+@import './song-background.scss';
+
+.song-tile-list {
+  text-align: center;
+  padding: 20px;
+  width: 560px;
+  max-height: auto;
+  display: flex;
+  color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 50px;
+  gap: 50px;
+  column-gap: 0px;
+
+  > a {
+    text-decoration: none;
+    color: #ff2600;
+    font-family: fantasy;
+
+    .icon-chevron-down {
+      position: absolute;
+      bottom: 22px;
+      left: 20px;
+      box-sizing: border-box;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid transparent;
+      border-radius: 100px;
+      &::after {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        transform: rotate(45deg);
+      }
+    }
+
+    > div {
+      height: 200px;
+      width: 200px;
+      border: 2px solid #ff2600;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0px 0px 21px 1px rgba(255, 38, 0, 1);
+      transition: transform 0.2s ease-in;
+      background-color: rgba(0, 0, 0, 0.9);
+      font-size: 25px;
+      margin-top: 20px;
+      padding: 2px;
+      &:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        z-index: 0;
+        opacity: 1;
+        & .icon-chevron-down {
+          opacity: 1;
+        }
+      }
+      & .icon-chevron-down {
+        opacity: 0;
+        transition: all 1s;
+      }
+    }
+  }
+}
