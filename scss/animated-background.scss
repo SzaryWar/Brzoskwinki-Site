@@ -1,0 +1,16 @@
+@keyframes slide {
+  from {
+    transform: translateX(-80vw);
+  }
+  to {
+    transform: translateX(180vw);
+  }
+}
+
+.animated-background {
+  img {
+    position: absolute;
+    z-index: -1;
+    animation: slide 20s linear infinite;
+  }
+}

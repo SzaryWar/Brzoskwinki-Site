@@ -1,0 +1,18 @@
+$backgrounds: (
+  '#bg_domwariatow': 'psych.jpg',
+  '#bg_stawaiwalcz': 'siw.jpg',
+  '#bg_drazyskala': 'syzyf.jpg',
+  '#bg_deprecha': 'depr.jpg',
+  '#bg_pogrzebany': 'bpogrz.jpg',
+  '#bg_sluga': 'bsluga.jpg',
+  '#bg_wilki': 'bwilk.jpg',
+  '#bg_bekon': 'bekonbg.png',
+  '#bg_transy': 'transbg.jpg',
+  '#bg_kostrzyn': 'Kostrzynbg.avif',
+);
+
+@each $fuckingIdSelector, $shittyFileName in $backgrounds {
+  #{$fuckingIdSelector} {
+    @include songbackground(url(../img/song-backgrounds/#{$shittyFileName}));
+  }
+}

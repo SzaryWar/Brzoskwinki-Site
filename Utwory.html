@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Brzoskwinki</title>
-    <link rel="stylesheet" href="./css/index.scss" type="text/css" />
+    <link rel="stylesheet" href="./scss/index.scss" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/fontello.css" />
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
     </style>
     <link rel="shortcut icon" href="img/favicon(1).ico" />
     <meta charset="UTF-8" />
@@ -20,16 +20,13 @@
     <script type="text/javascript" src="reveal.js"></script>
   </head>
   <body>
-    <div class="bgimg">
-      <img src="img/Peach.svg" alt="" class="bg__img" />
+    <div class="animated-background">
+      <img src="img/Peach.svg" alt="" />
     </div>
     <nav>
-      <div id="logo">
+      <div class="logo">
         <a href="index.html"
-          ><img
-            src="img/logo.png"
-            alt="logo"
-            style="width: auto; height: 200px"
+          ><img src="img/logo.png" alt="logo" style="width: auto; height: 200px"
         /></a>
       </div>
       <ul>
@@ -51,116 +48,154 @@
       <a name="titl0"></a>
       <div id="leftside">
         <div class="photo">
-          <img
-            src="img/Gob.jpg"
-            alt="gobers"
-            style="width: 180px; height: auto"
-          />
+          <img src="img/Gob.jpg" alt="gobers" style="width: 180px; height: auto" />
           <p>Gobers Gary Technik - Perkusista</p>
         </div>
         <div class="photo">
-          <img
-            src="img/Pizmak.jpg"
-            alt="Niki Mintay"
-            style="width: 180px; height: auto"
-          />
+          <img src="img/Pizmak.jpg" alt="Niki Mintay" style="width: 180px; height: auto" />
           <p>Piżmak - Gitarzysta prowadzący</p>
         </div>
         <div>
-          <img
-            src="img/logosvg.svg"
-            alt="logosvg"
-            style="width: 180px; height: auto"
-          />
+          <img src="img/logosvg.svg" alt="logosvg" style="width: 180px; height: auto" />
         </div>
       </div>
-      <div id="content">
+      <article class="song-tile-list">
+        <a href="#titl1">
+          <div id="tile_domWariatow">
+            <p>Dom Wariatów</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl2">
+          <div id="tile_stawajiwalcz">
+            <p>Stawaj i Walcz</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl3">
+          <div id="tile_drozyskala">
+            <p>Drążyskała</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl4">
+          <div id="tile_deprecha">
+            <p>Deprecha</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl5">
+          <div id="tile_pogrzebany">
+            <p>Pogrzebany Żywcem</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl6">
+          <div id="tile_sluga">
+            <p>Sługa</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl7">
+          <div id="tile_wilki">
+            <p>Wilków Wycie</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl8">
+          <div id="tile_bekon">
+            <p>Bekon</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl9">
+          <div id="tile_transy">
+            <p>Transy</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+        <a href="#titl10">
+          <div id="tile_kostrzyn">
+            <p>Wolność w Kostrzynie</p>
+            <div class="icon-chevron-down"></div>
+          </div>
+        </a>
+      </article>
+      <!-- <div id="content">
         <article class="title1">
           <a href="#titl1">
             <div id="tile_domWariatow">
               <p>Dom Wariatów</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl2">
             <div id="tile_stawajiwalcz">
               <p>Stawaj i Walcz</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl3">
             <div id="tile_drozyskala">
               <p>Drążyskała</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl4">
             <div id="tile_deprecha">
               <p>Deprecha</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl5">
             <div id="tile_pogrzebany">
               <p>Pogrzebany Żywcem</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl6">
             <div id="tile_sluga">
               <p>Sługa</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl7">
             <div id="tile_wilki">
               <p>Wilków Wycie</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl8">
             <div id="tile_bekon">
               <p>Bekon</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl9">
             <div id="tile_transy">
               <p>Transy</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
           <a href="#titl10">
             <div id="tile_kostrzyn">
               <p>Wolność w Kostrzynie</p>
-              <span class="icon"><i class="icon-down-open-big"></i></span>
+              <div class="icon-chevron-down"></div>
             </div>
           </a>
-        </article>
+        </article> -->
       </div>
       <div id="aside">
         <div>
-          <img
-            src="img/Mintay.jpg"
-            alt="Niki Mintay"
-            style="width: 180px; height: auto"
-          />
+          <img src="img/Mintay.jpg" alt="Niki Mintay" style="width: 180px; height: auto" />
           <p>Niki Mintay - Basista</p>
         </div>
         <div>
-          <img
-            src="img/Szary.jpg"
-            alt="Szary"
-            style="width: 180px; height: auto"
-          />
+          <img src="img/Szary.jpg" alt="Szary" style="width: 180px; height: auto" />
           <p>Szarawar - Gitarzysta Rytmiczny</p>
         </div>
         <div>
-          <img
-            src="img/dziewit1.jpg"
-            alt="Dziewit 2000"
-            style="width: 180px; height: auto"
-          />
+          <img src="img/dziewit1.jpg" alt="Dziewit 2000" style="width: 180px; height: auto" />
           <p>Dziewit 2000 - Wokal</p>
         </div>
       </div>
@@ -225,11 +260,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/pizm1.png"
-              alt="Piżmak"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/pizm1.png" alt="Piżmak" style="width: 180px; height: auto" />
             <p>Piżmak</p>
           </div>
         </div>
@@ -273,11 +304,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/mintayzd.png"
-              alt="Niki Mintay"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/mintayzd.png" alt="Niki Mintay" style="width: 180px; height: auto" />
             <p>Niki Mintay</p>
           </div>
         </div>
@@ -331,11 +358,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/rob.png"
-              alt="Gary"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/rob.png" alt="Gary" style="width: 180px; height: auto" />
             <p>Gobers Gary</p>
           </div>
         </div>
@@ -392,11 +415,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/Szary1.png"
-              alt="Szarawar"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/Szary1.png" alt="Szarawar" style="width: 180px; height: auto" />
             <p>Szarawar</p>
           </div>
         </div>
@@ -448,11 +467,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/rob2.png"
-              alt="Gobers"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/rob2.png" alt="Gobers" style="width: 180px; height: auto" />
             <p>Gobers Gary</p>
           </div>
         </div>
@@ -516,11 +531,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/rob3.png"
-              alt="Gobers Gary"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/rob3.png" alt="Gobers Gary" style="width: 180px; height: auto" />
             <p>Gobers Gary</p>
           </div>
         </div>
@@ -637,11 +648,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/rob4.png"
-              alt="Gary"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/rob4.png" alt="Gary" style="width: 180px; height: auto" />
             <p>Gobers Gary</p>
           </div>
         </div>
@@ -714,11 +721,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/rob5.png"
-              alt="Gary"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/rob5.png" alt="Gary" style="width: 180px; height: auto" />
             <p>Gobers Gary</p>
           </div>
         </div>
@@ -769,11 +772,7 @@
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/szary2.png"
-              alt="Szarawar"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/szary2.png" alt="Szarawar" style="width: 180px; height: auto" />
             <p>Szarawar</p>
           </div>
         </div>
@@ -789,57 +788,44 @@
             <p>
               Męczą mnie słowa, twarde myśli, siła zazdrości, mowa nienawiści<br />
               Szukam ucieczki od tego bagna, trochę spokoju, gdy pogoda ładna<br />
-              Raz przez przypadek siostra radę dała, na Woodstock wyruszaj, tam
-              zabawa cała<br />
-              Biorę więc namiot, spodnie szarawary, zespół, gitarę i drobne na
-              browary<br />
+              Raz przez przypadek siostra radę dała, na Woodstock wyruszaj, tam zabawa cała<br />
+              Biorę więc namiot, spodnie szarawary, zespół, gitarę i drobne na browary<br />
               <br /><br />
-              To miejsce w Kostrzynie, gdzie czas wolniej płynie, gdzie dobrą
-              muzę grają I wszyscy śpiewają<br />
-              gdzie ludzie zdejmują maski codzienności, by móc w życiu zaznać
-              prostych przyjemności<br />
-              Przyjeżdżasz raz w roku, wyciągnąć dusze z mroku, odnaleźć
-              nadzieje I spełnić swe marzenie<br />
-              Odzyskać energie i poczuć wolności i mieć siłę wrócić do
-              normalności<br />
+              To miejsce w Kostrzynie, gdzie czas wolniej płynie, gdzie dobrą muzę grają I wszyscy
+              śpiewają<br />
+              gdzie ludzie zdejmują maski codzienności, by móc w życiu zaznać prostych
+              przyjemności<br />
+              Przyjeżdżasz raz w roku, wyciągnąć dusze z mroku, odnaleźć nadzieje I spełnić swe
+              marzenie<br />
+              Odzyskać energie i poczuć wolności i mieć siłę wrócić do normalności<br />
               <br /><br />
-              Pojdę tam w pogo, zatańczę w błocie, wypije browce, usnę przy
-              płocie<br />
-              Zjem też burgera, ale będzie pyszny, nawet pójdę do namiotu Hare
-              Kryszny<br />
-              Znajdę też typa, co z pragnienia usycha, dam mu browara I zagram z
-              nim w Giertycha<br />
-              Planów mam sporo, trzy dni to mało, chciałbym móc coś zrobić, żeby
-              dłużej to trwało<br />
+              Pojdę tam w pogo, zatańczę w błocie, wypije browce, usnę przy płocie<br />
+              Zjem też burgera, ale będzie pyszny, nawet pójdę do namiotu Hare Kryszny<br />
+              Znajdę też typa, co z pragnienia usycha, dam mu browara I zagram z nim w Giertycha<br />
+              Planów mam sporo, trzy dni to mało, chciałbym móc coś zrobić, żeby dłużej to trwało<br />
               <br /><br />
-              To miejsce w Kostrzynie, gdzie czas wolniej płynie, gdzie dobrą
-              muzę grają I wszyscy śpiewają<br />
-              gdzie ludzie zdejmują maski codzienności, by móc w życiu zaznać
-              prostych przyjemności<br />
-              Przyjeżdżasz raz w roku, wyciągnąć dusze z mroku, odnaleźć
-              nadzieje I spełnić swe marzenie<br />
-              Odzyskać energie i poczuć wolności i mieć siłę wrócić do
-              normalności<br />
+              To miejsce w Kostrzynie, gdzie czas wolniej płynie, gdzie dobrą muzę grają I wszyscy
+              śpiewają<br />
+              gdzie ludzie zdejmują maski codzienności, by móc w życiu zaznać prostych
+              przyjemności<br />
+              Przyjeżdżasz raz w roku, wyciągnąć dusze z mroku, odnaleźć nadzieje I spełnić swe
+              marzenie<br />
+              Odzyskać energie i poczuć wolności i mieć siłę wrócić do normalności<br />
               <br /><br />
-              To miejsce w Kostrzynie, gdzie czas wolniej płynie, gdzie dobrą
-              muzę grają I wszyscy śpiewają<br />
-              gdzie ludzie zdejmują maski codzienności, by móc w życiu zaznać
-              prostych przyjemności<br />
-              Przyjeżdżasz raz w roku, wyciągnąć dusze z mroku, odnaleźć
-              nadzieje I spełnić swe marzenie<br />
-              Odzyskać energie i poczuć wolności i mieć siłę wrócić do
-              normalności<br />
+              To miejsce w Kostrzynie, gdzie czas wolniej płynie, gdzie dobrą muzę grają I wszyscy
+              śpiewają<br />
+              gdzie ludzie zdejmują maski codzienności, by móc w życiu zaznać prostych
+              przyjemności<br />
+              Przyjeżdżasz raz w roku, wyciągnąć dusze z mroku, odnaleźć nadzieje I spełnić swe
+              marzenie<br />
+              Odzyskać energie i poczuć wolności i mieć siłę wrócić do normalności<br />
             </p>
           </div>
         </div>
         <div class="songtxtbga">
           <div class="txtat">
             <h1>Autor:</h1>
-            <img
-              src="img/szary4.png"
-              alt="Szarawar"
-              style="width: 180px; height: auto"
-            />
+            <img src="img/szary4.png" alt="Szarawar" style="width: 180px; height: auto" />
             <p>Szarawar</p>
           </div>
         </div>

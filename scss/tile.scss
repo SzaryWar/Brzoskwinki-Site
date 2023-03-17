@@ -1,7 +1,7 @@
 /* 
 Kod dla strony utwory
   */
-@import "./mixin.scss";
+@import './mixin.scss';
 .title1 {
   display: flex;
   color: #ffffff;
@@ -53,7 +53,7 @@ Kod dla strony utwory
 }
 
 #tile_domWariatow {
-  @include tileposition(url("../img/wariat.jpg"));
+  @include tileposition(url('../img/wariat.jpg'));
   & p {
     background-color: rgba(0, 0, 0, 0.9);
     font-size: 25px;
